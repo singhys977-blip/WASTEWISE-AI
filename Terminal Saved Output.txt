@@ -1,0 +1,432 @@
+Last login: Tue Sep  8 18:59:00 on ttys000
+/Users/harshitasingh/.zprofile:5: no such file or directory: /Users/harshitasingh/Downloads/flutter/binemulate
+harshitasingh@Harshitas-MacBook-Air ~ % cd ~/Desktop
+harshitasingh@Harshitas-MacBook-Air Desktop % mkdir smart-waste-ai
+harshitasingh@Harshitas-MacBook-Air Desktop % cd smart-waste-ai
+harshitasingh@Harshitas-MacBook-Air smart-waste-ai % python3 -m venv venv
+harshitasingh@Harshitas-MacBook-Air smart-waste-ai % source venv/bin/activate
+(venv) harshitasingh@Harshitas-MacBook-Air smart-waste-ai % pip install streamlit pillow numpy pandas scikit-learn matplotlib
+Collecting streamlit
+  Downloading streamlit-1.63.0-py3-none-any.whl.metadata (10 kB)
+Collecting pillow
+  Downloading pillow-12.3.0-cp313-cp313-macosx_11_0_arm64.whl.metadata (9.1 kB)
+Collecting numpy
+  Downloading numpy-2.5.3-cp313-cp313-macosx_11_0_arm64.whl.metadata (6.6 kB)
+Collecting pandas
+  Downloading pandas-3.0.5-cp313-cp313-macosx_11_0_arm64.whl.metadata (79 kB)
+Collecting scikit-learn
+  Downloading scikit_learn-1.9.0-cp313-cp313-macosx_12_0_arm64.whl.metadata (11 kB)
+Collecting matplotlib
+  Downloading matplotlib-3.11.1-cp313-cp313-macosx_11_0_arm64.whl.metadata (80 kB)
+Collecting altair!=5.4.0,!=5.4.1,<7,>=5.0.0 (from streamlit)
+  Downloading altair-6.2.2-py3-none-any.whl.metadata (11 kB)
+Collecting click<9,>=7.0 (from streamlit)
+  Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting packaging>=20 (from streamlit)
+  Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting pydeck<1,>=0.8.0b4 (from streamlit)
+  Downloading pydeck-0.9.3-py2.py3-none-any.whl.metadata (4.2 kB)
+Collecting protobuf<8,>=5.26.1 (from streamlit)
+  Downloading protobuf-7.36.1-cp310-abi3-macosx_10_9_universal2.whl.metadata (595 bytes)
+Collecting pyarrow!=25.0.0,<26,>=7.0 (from streamlit)
+  Downloading pyarrow-25.0.1-cp313-cp313-macosx_12_0_arm64.whl.metadata (3.0 kB)
+Collecting requests<3,>=2.27 (from streamlit)
+  Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting toml<2,>=0.10.1 (from streamlit)
+  Downloading toml-0.10.2-py2.py3-none-any.whl.metadata (7.1 kB)
+Collecting typing-extensions<5,>=4.10.0 (from streamlit)
+  Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting starlette<2,>=0.46.0 (from streamlit)
+  Downloading starlette-1.6.0-py3-none-any.whl.metadata (6.4 kB)
+Collecting uvicorn<1,>=0.30.0 (from streamlit)
+  Downloading uvicorn-0.52.4-py3-none-any.whl.metadata (6.6 kB)
+Collecting httptools<1,>=0.6.3 (from streamlit)
+  Downloading httptools-0.8.0-cp313-cp313-macosx_11_0_arm64.whl.metadata (3.5 kB)
+Collecting anyio<5,>=4.0.0 (from streamlit)
+  Downloading anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+Collecting python-multipart<1,>=0.0.10 (from streamlit)
+  Downloading python_multipart-0.0.32-py3-none-any.whl.metadata (2.1 kB)
+Collecting websockets<17,>=12.0.0 (from streamlit)
+  Downloading websockets-16.1.1-cp313-cp313-macosx_11_0_arm64.whl.metadata (6.8 kB)
+Collecting itsdangerous<3,>=2.1.2 (from streamlit)
+  Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting scipy>=1.10.0 (from scikit-learn)
+  Downloading scipy-1.18.1-cp313-cp313-macosx_12_0_arm64.whl.metadata (62 kB)
+Collecting joblib>=1.4.0 (from scikit-learn)
+  Downloading joblib-1.6.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting narwhals>=2.0.1 (from scikit-learn)
+  Downloading narwhals-2.26.0-py3-none-any.whl.metadata (15 kB)
+Collecting threadpoolctl>=3.5.0 (from scikit-learn)
+  Downloading threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+Collecting contourpy>=1.0.1 (from matplotlib)
+  Downloading contourpy-1.3.3-cp313-cp313-macosx_11_0_arm64.whl.metadata (5.5 kB)
+Collecting cycler>=0.10 (from matplotlib)
+  Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.28.2 (from matplotlib)
+  Downloading fonttools-4.64.0-cp313-cp313-macosx_10_13_universal2.whl.metadata (123 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib)
+  Downloading kiwisolver-1.5.1-cp313-cp313-macosx_11_0_arm64.whl.metadata (5.2 kB)
+Collecting pyparsing>=3 (from matplotlib)
+  Downloading pyparsing-3.3.2-py3-none-any.whl.metadata (5.8 kB)
+Collecting jinja2 (from altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit)
+  Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting jsonschema>=3.0 (from altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit)
+  Downloading jsonschema-4.26.0-py3-none-any.whl.metadata (7.6 kB)
+Collecting idna>=2.8 (from anyio<5,>=4.0.0->streamlit)
+  Downloading idna-3.19-py3-none-any.whl.metadata (9.2 kB)
+Collecting cloudpickle>=3.0 (from joblib>=1.4.0->scikit-learn)
+  Downloading cloudpickle-3.1.2-py3-none-any.whl.metadata (7.1 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas)
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting charset_normalizer<4,>=2 (from requests<3,>=2.27->streamlit)
+  Downloading charset_normalizer-3.5.1-cp313-cp313-macosx_10_13_universal2.whl.metadata (45 kB)
+Collecting urllib3<3,>=1.26 (from requests<3,>=2.27->streamlit)
+  Downloading urllib3-2.7.0-py3-none-any.whl.metadata (6.9 kB)
+Collecting certifi>=2023.5.7 (from requests<3,>=2.27->streamlit)
+  Downloading certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)
+Collecting h11>=0.8 (from uvicorn<1,>=0.30.0->streamlit)
+  Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting MarkupSafe>=2.0 (from jinja2->altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit)
+  Downloading markupsafe-3.0.3-cp313-cp313-macosx_11_0_arm64.whl.metadata (2.7 kB)
+Collecting attrs>=22.2.0 (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit)
+  Downloading attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+Collecting jsonschema-specifications>=2023.03.6 (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit)
+  Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+Collecting referencing>=0.28.4 (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit)
+  Downloading referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+Collecting rpds-py>=0.25.0 (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit)
+  Downloading rpds_py-2026.6.3-cp313-cp313-macosx_11_0_arm64.whl.metadata (4.1 kB)
+Downloading streamlit-1.63.0-py3-none-any.whl (10.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.5/10.5 MB 3.1 MB/s eta 0:00:00
+Downloading pillow-12.3.0-cp313-cp313-macosx_11_0_arm64.whl (4.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.8/4.8 MB 2.2 MB/s eta 0:00:00
+Downloading numpy-2.5.3-cp313-cp313-macosx_11_0_arm64.whl (12.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.0/12.0 MB 2.7 MB/s eta 0:00:00
+Downloading pandas-3.0.5-cp313-cp313-macosx_11_0_arm64.whl (9.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.9/9.9 MB 3.6 MB/s eta 0:00:00
+Downloading scikit_learn-1.9.0-cp313-cp313-macosx_12_0_arm64.whl (8.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.2/8.2 MB 2.8 MB/s eta 0:00:00
+Downloading matplotlib-3.11.1-cp313-cp313-macosx_11_0_arm64.whl (9.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.3/9.3 MB 2.5 MB/s eta 0:00:00
+Downloading altair-6.2.2-py3-none-any.whl (797 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 797.6/797.6 kB 2.5 MB/s eta 0:00:00
+Downloading anyio-4.15.1-py3-none-any.whl (132 kB)
+Downloading click-8.5.0-py3-none-any.whl (125 kB)
+Downloading contourpy-1.3.3-cp313-cp313-macosx_11_0_arm64.whl (274 kB)
+Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Downloading fonttools-4.64.0-cp313-cp313-macosx_10_13_universal2.whl (3.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 2.2 MB/s eta 0:00:00
+Downloading httptools-0.8.0-cp313-cp313-macosx_11_0_arm64.whl (111 kB)
+Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Downloading joblib-1.6.0-py3-none-any.whl (306 kB)
+Downloading kiwisolver-1.5.1-cp313-cp313-macosx_11_0_arm64.whl (64 kB)
+Downloading narwhals-2.26.0-py3-none-any.whl (474 kB)
+Downloading packaging-26.3-py3-none-any.whl (129 kB)
+Downloading protobuf-7.36.1-cp310-abi3-macosx_10_9_universal2.whl (456 kB)
+Downloading pyarrow-25.0.1-cp313-cp313-macosx_12_0_arm64.whl (35.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.9/35.9 MB 3.6 MB/s eta 0:00:00
+Downloading pydeck-0.9.3-py2.py3-none-any.whl (11.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.4/11.4 MB 4.4 MB/s eta 0:00:00
+Downloading pyparsing-3.3.2-py3-none-any.whl (122 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading python_multipart-0.0.32-py3-none-any.whl (30 kB)
+Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+Downloading scipy-1.18.1-cp313-cp313-macosx_12_0_arm64.whl (28.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 28.7/28.7 MB 2.9 MB/s eta 0:00:00
+Downloading starlette-1.6.0-py3-none-any.whl (75 kB)
+Downloading threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
+Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Downloading uvicorn-0.52.4-py3-none-any.whl (79 kB)
+Downloading websockets-16.1.1-cp313-cp313-macosx_11_0_arm64.whl (177 kB)
+Downloading certifi-2026.7.22-py3-none-any.whl (136 kB)
+Downloading charset_normalizer-3.5.1-cp313-cp313-macosx_10_13_universal2.whl (340 kB)
+Downloading cloudpickle-3.1.2-py3-none-any.whl (22 kB)
+Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+Downloading idna-3.19-py3-none-any.whl (68 kB)
+Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+Downloading jsonschema-4.26.0-py3-none-any.whl (90 kB)
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading urllib3-2.7.0-py3-none-any.whl (131 kB)
+Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+Downloading markupsafe-3.0.3-cp313-cp313-macosx_11_0_arm64.whl (12 kB)
+Downloading referencing-0.37.0-py3-none-any.whl (26 kB)
+Downloading rpds_py-2026.6.3-cp313-cp313-macosx_11_0_arm64.whl (338 kB)
+Installing collected packages: websockets, urllib3, typing-extensions, toml, threadpoolctl, six, rpds-py, python-multipart, pyparsing, pyarrow, protobuf, pillow, packaging, numpy, narwhals, MarkupSafe, kiwisolver, itsdangerous, idna, httptools, h11, fonttools, cycler, cloudpickle, click, charset_normalizer, certifi, attrs, uvicorn, scipy, requests, referencing, python-dateutil, joblib, jinja2, contourpy, anyio, starlette, scikit-learn, pydeck, pandas, matplotlib, jsonschema-specifications, jsonschema, altair, streamlit
+ERROR: Could not install packages due to an OSError: [Errno 28] No space left on device
+
+
+[notice] A new release of pip is available: 24.2 -> 26.2.1
+[notice] To update, run: pip install --upgrade pip
+(venv) harshitasingh@Harshitas-MacBook-Air smart-waste-ai % pip install --upgrade pip
+Requirement already satisfied: pip in ./venv/lib/python3.13/site-packages (24.2)
+Collecting pip
+  Downloading pip-26.2.1-py3-none-any.whl.metadata (4.6 kB)
+Downloading pip-26.2.1-py3-none-any.whl (1.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 7.9 MB/s eta 0:00:00
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 24.2
+    Uninstalling pip-24.2:
+      Successfully uninstalled pip-24.2
+Successfully installed pip-26.2.1
+(venv) harshitasingh@Harshitas-MacBook-Air smart-waste-ai % pip list
+Package            Version
+------------------ ---------
+attrs              26.1.0
+certifi            2026.7.22
+charset-normalizer 3.5.1
+click              8.5.0
+cloudpickle        3.1.2
+cycler             0.12.1
+fonttools          4.64.0
+h11                0.16.0
+httptools          0.8.0
+idna               3.19
+itsdangerous       2.2.0
+kiwisolver         1.5.1
+MarkupSafe         3.0.3
+narwhals           2.26.0
+numpy              2.5.3
+packaging          26.3
+pillow             12.3.0
+pip                26.2.1
+protobuf           7.36.1
+pyarrow            25.0.1
+pyparsing          3.3.2
+python-multipart   0.0.32
+rpds-py            2026.6.3
+six                1.17.0
+threadpoolctl      3.6.0
+toml               0.10.2
+typing_extensions  4.16.0
+urllib3            2.7.0
+uvicorn            0.52.4
+websockets         16.1.1
+(venv) harshitasingh@Harshitas-MacBook-Air smart-waste-ai % touch app.py
+(venv) harshitasingh@Harshitas-MacBook-Air smart-waste-ai % mkdir -p data
+(venv) harshitasingh@Harshitas-MacBook-Air smart-waste-ai % touch data/waste_rules.json
+(venv) harshitasingh@Harshitas-MacBook-Air smart-waste-ai % data/waste_rules.json
+zsh: permission denied: data/waste_rules.json
+(venv) harshitasingh@Harshitas-MacBook-Air smart-waste-ai % cat data/waste_rules.json
+{
+    "biodegradable": {
+        "handling": "Segregate biodegradable waste separately.",
+        "recommended_action": "Send for appropriate organic waste processing.",
+        "source": "Solid Waste Management Rules, 2026"
+    },
+
+    "recyclable": {
+        "handling": "Keep recyclable material separated.",
+        "recommended_action": "Send to an appropriate recycling or processing channel.",
+        "source": "Solid Waste Management Rules, 2026"
+    },
+
+    "non_recyclable": {
+        "handling": "Keep non-recyclable waste separate from recyclable material.",
+        "recommended_action": "Send through the appropriate municipal waste-management channel.",
+        "source": "Solid Waste Management Rules, 2026"
+    },
+
+    "hazardous": {
+        "handling": "Do not mix hazardous waste with ordinary household waste.",
+        "recommended_action": "Use an appropriate hazardous-waste handling channel.",
+        "source": "Applicable waste-management regulations"
+    },
+
+    "electronic": {
+        "handling": "Do not mix electronic waste with ordinary solid waste.",
+        "recommended_action": "Use an appropriate e-waste collection and management channel.",
+        "source": "Applicable e-waste regulations"
+    },
+
+    "other": {
+        "handling": "Identify the material before deciding the disposal method.",
+        "recommended_action": "Use the appropriate waste-management channel based on the material.",
+        "source": "Solid Waste Management Rules, 2026"
+    }
+}
+(venv) harshitasingh@Harshitas-MacBook-Air smart-waste-ai % pip install streamlit openai python-dotenv
+Collecting streamlit
+  Using cached streamlit-1.63.0-py3-none-any.whl.metadata (10 kB)
+Collecting openai
+  Downloading openai-3.8.0-py3-none-any.whl.metadata (41 kB)
+Collecting python-dotenv
+  Downloading python_dotenv-1.2.3-py3-none-any.whl.metadata (29 kB)
+Collecting altair!=5.4.0,!=5.4.1,<7,>=5.0.0 (from streamlit)
+  Using cached altair-6.2.2-py3-none-any.whl.metadata (11 kB)
+Requirement already satisfied: click<9,>=7.0 in ./venv/lib/python3.13/site-packages (from streamlit) (8.5.0)
+Requirement already satisfied: numpy<3,>=1.23 in ./venv/lib/python3.13/site-packages (from streamlit) (2.5.3)
+Requirement already satisfied: packaging>=20 in ./venv/lib/python3.13/site-packages (from streamlit) (26.3)
+Collecting pandas<4,>=1.4.0 (from streamlit)
+  Using cached pandas-3.0.5-cp313-cp313-macosx_11_0_arm64.whl.metadata (79 kB)
+Requirement already satisfied: pillow<13,>=7.1.0 in ./venv/lib/python3.13/site-packages (from streamlit) (12.3.0)
+Collecting pydeck<1,>=0.8.0b4 (from streamlit)
+  Using cached pydeck-0.9.3-py2.py3-none-any.whl.metadata (4.2 kB)
+Requirement already satisfied: protobuf<8,>=5.26.1 in ./venv/lib/python3.13/site-packages (from streamlit) (7.36.1)
+Requirement already satisfied: pyarrow!=25.0.0,<26,>=7.0 in ./venv/lib/python3.13/site-packages (from streamlit) (25.0.1)
+Collecting requests<3,>=2.27 (from streamlit)
+  Using cached requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Requirement already satisfied: toml<2,>=0.10.1 in ./venv/lib/python3.13/site-packages (from streamlit) (0.10.2)
+Requirement already satisfied: typing-extensions<5,>=4.10.0 in ./venv/lib/python3.13/site-packages (from streamlit) (4.16.0)
+Collecting starlette<2,>=0.46.0 (from streamlit)
+  Using cached starlette-1.6.0-py3-none-any.whl.metadata (6.4 kB)
+Requirement already satisfied: uvicorn<1,>=0.30.0 in ./venv/lib/python3.13/site-packages (from streamlit) (0.52.4)
+Requirement already satisfied: httptools<1,>=0.6.3 in ./venv/lib/python3.13/site-packages (from streamlit) (0.8.0)
+Collecting anyio<5,>=4.0.0 (from streamlit)
+  Using cached anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+Requirement already satisfied: python-multipart<1,>=0.0.10 in ./venv/lib/python3.13/site-packages (from streamlit) (0.0.32)
+Requirement already satisfied: websockets<17,>=12.0.0 in ./venv/lib/python3.13/site-packages (from streamlit) (16.1.1)
+Requirement already satisfied: itsdangerous<3,>=2.1.2 in ./venv/lib/python3.13/site-packages (from streamlit) (2.2.0)
+Collecting jinja2 (from altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit)
+  Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting jsonschema>=3.0 (from altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit)
+  Using cached jsonschema-4.26.0-py3-none-any.whl.metadata (7.6 kB)
+Requirement already satisfied: narwhals>=2.4.0 in ./venv/lib/python3.13/site-packages (from altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit) (2.26.0)
+Requirement already satisfied: idna>=2.8 in ./venv/lib/python3.13/site-packages (from anyio<5,>=4.0.0->streamlit) (3.19)
+Collecting python-dateutil>=2.8.2 (from pandas<4,>=1.4.0->streamlit)
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Requirement already satisfied: charset_normalizer<4,>=2 in ./venv/lib/python3.13/site-packages (from requests<3,>=2.27->streamlit) (3.5.1)
+Requirement already satisfied: urllib3<3,>=1.26 in ./venv/lib/python3.13/site-packages (from requests<3,>=2.27->streamlit) (2.7.0)
+Requirement already satisfied: certifi>=2023.5.7 in ./venv/lib/python3.13/site-packages (from requests<3,>=2.27->streamlit) (2026.7.22)
+Requirement already satisfied: h11>=0.8 in ./venv/lib/python3.13/site-packages (from uvicorn<1,>=0.30.0->streamlit) (0.16.0)
+Collecting httpx2<3,>=2.7.0 (from openai)
+  Downloading httpx2-2.12.0-py3-none-any.whl.metadata (9.5 kB)
+Collecting jiter<1,>=0.16.0 (from openai)
+  Downloading jiter-0.16.0-cp313-cp313-macosx_11_0_arm64.whl.metadata (5.2 kB)
+Collecting pydantic!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,<3,>=1.10.13 (from openai)
+  Downloading pydantic-2.13.5-py3-none-any.whl.metadata (110 kB)
+Collecting sniffio (from openai)
+  Downloading sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting httpcore2==2.12.0 (from httpx2<3,>=2.7.0->openai)
+  Downloading httpcore2-2.12.0-py3-none-any.whl.metadata (25 kB)
+Collecting truststore>=0.10 (from httpx2<3,>=2.7.0->openai)
+  Downloading truststore-0.10.4-py3-none-any.whl.metadata (4.4 kB)
+Collecting annotated-types>=0.6.0 (from pydantic!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,<3,>=1.10.13->openai)
+  Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.46.5 (from pydantic!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,<3,>=1.10.13->openai)
+  Downloading pydantic_core-2.46.5-cp313-cp313-macosx_11_0_arm64.whl.metadata (6.6 kB)
+Collecting typing-inspection>=0.4.2 (from pydantic!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,<3,>=1.10.13->openai)
+  Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+Requirement already satisfied: MarkupSafe>=2.0 in ./venv/lib/python3.13/site-packages (from jinja2->altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit) (3.0.3)
+Requirement already satisfied: attrs>=22.2.0 in ./venv/lib/python3.13/site-packages (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit) (26.1.0)
+Collecting jsonschema-specifications>=2023.03.6 (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit)
+  Using cached jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+Collecting referencing>=0.28.4 (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit)
+  Using cached referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+Requirement already satisfied: rpds-py>=0.25.0 in ./venv/lib/python3.13/site-packages (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit) (2026.6.3)
+Requirement already satisfied: six>=1.5 in ./venv/lib/python3.13/site-packages (from python-dateutil>=2.8.2->pandas<4,>=1.4.0->streamlit) (1.17.0)
+Using cached streamlit-1.63.0-py3-none-any.whl (10.5 MB)
+Using cached altair-6.2.2-py3-none-any.whl (797 kB)
+Using cached anyio-4.15.1-py3-none-any.whl (132 kB)
+Using cached pandas-3.0.5-cp313-cp313-macosx_11_0_arm64.whl (9.9 MB)
+Using cached pydeck-0.9.3-py2.py3-none-any.whl (11.4 MB)
+Using cached requests-2.34.2-py3-none-any.whl (73 kB)
+Using cached starlette-1.6.0-py3-none-any.whl (75 kB)
+Downloading openai-3.8.0-py3-none-any.whl (1.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 3.1 MB/s  0:00:00
+Downloading httpx2-2.12.0-py3-none-any.whl (95 kB)
+Downloading httpcore2-2.12.0-py3-none-any.whl (83 kB)
+Downloading jiter-0.16.0-cp313-cp313-macosx_11_0_arm64.whl (306 kB)
+Downloading pydantic-2.13.5-py3-none-any.whl (472 kB)
+Downloading pydantic_core-2.46.5-cp313-cp313-macosx_11_0_arm64.whl (1.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.9/1.9 MB 1.8 MB/s  0:00:01
+Downloading python_dotenv-1.2.3-py3-none-any.whl (22 kB)
+Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
+Using cached jsonschema-4.26.0-py3-none-any.whl (90 kB)
+Using cached jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Using cached referencing-0.37.0-py3-none-any.whl (26 kB)
+Downloading truststore-0.10.4-py3-none-any.whl (18 kB)
+Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
+Installing collected packages: typing-inspection, truststore, sniffio, requests, referencing, python-dotenv, python-dateutil, pydantic-core, jiter, jinja2, anyio, annotated-types, starlette, pydeck, pydantic, pandas, jsonschema-specifications, httpcore2, jsonschema, httpx2, openai, altair, streamlit
+Successfully installed altair-6.2.2 annotated-types-0.8.0 anyio-4.15.1 httpcore2-2.12.0 httpx2-2.12.0 jinja2-3.1.6 jiter-0.16.0 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 openai-3.8.0 pandas-3.0.5 pydantic-2.13.5 pydantic-core-2.46.5 pydeck-0.9.3 python-dateutil-2.9.0.post0 python-dotenv-1.2.3 referencing-0.37.0 requests-2.34.2 sniffio-1.3.1 starlette-1.6.0 streamlit-1.63.0 truststore-0.10.4 typing-inspection-0.4.4
+(venv) harshitasingh@Harshitas-MacBook-Air smart-waste-ai % OPENAI_API_KEY=your_api_key_here
+(venv) harshitasingh@Harshitas-MacBook-Air smart-waste-ai % pip install -r requirements.txt
+ERROR: Could not open requirements file: [Errno 2] No such file or directory: 'requirements.txt'
+(venv) harshitasingh@Harshitas-MacBook-Air smart-waste-ai % python3 --version
+Python 3.13.0
+(venv) harshitasingh@Harshitas-MacBook-Air smart-waste-ai % python3 -m venv venv 
+(venv) harshitasingh@Harshitas-MacBook-Air smart-waste-ai % source venv/bin/activate
+(venv) harshitasingh@Harshitas-MacBook-Air smart-waste-ai % venv\Scripts\activate
+zsh: command not found: venvScriptsactivate
+(venv) harshitasingh@Harshitas-MacBook-Air smart-waste-ai % requirements.txt
+zsh: command not found: requirements.txt
+(venv) harshitasingh@Harshitas-MacBook-Air smart-waste-ai % touch requirements.txt
+(venv) harshitasingh@Harshitas-MacBook-Air smart-waste-ai % open -e requirements.txt
+(venv) harshitasingh@Harshitas-MacBook-Air smart-waste-ai % ls
+app.py			requirements.txt
+data			venv
+(venv) harshitasingh@Harshitas-MacBook-Air smart-waste-ai % pip install -r requirements.txt
+Requirement already satisfied: streamlit in ./venv/lib/python3.13/site-packages (from -r requirements.txt (line 1)) (1.63.0)
+Requirement already satisfied: pillow in ./venv/lib/python3.13/site-packages (from -r requirements.txt (line 2)) (12.3.0)
+Requirement already satisfied: altair!=5.4.0,!=5.4.1,<7,>=5.0.0 in ./venv/lib/python3.13/site-packages (from streamlit->-r requirements.txt (line 1)) (6.2.2)
+Requirement already satisfied: click<9,>=7.0 in ./venv/lib/python3.13/site-packages (from streamlit->-r requirements.txt (line 1)) (8.5.0)
+Requirement already satisfied: numpy<3,>=1.23 in ./venv/lib/python3.13/site-packages (from streamlit->-r requirements.txt (line 1)) (2.5.3)
+Requirement already satisfied: packaging>=20 in ./venv/lib/python3.13/site-packages (from streamlit->-r requirements.txt (line 1)) (26.3)
+Requirement already satisfied: pandas<4,>=1.4.0 in ./venv/lib/python3.13/site-packages (from streamlit->-r requirements.txt (line 1)) (3.0.5)
+Requirement already satisfied: pydeck<1,>=0.8.0b4 in ./venv/lib/python3.13/site-packages (from streamlit->-r requirements.txt (line 1)) (0.9.3)
+Requirement already satisfied: protobuf<8,>=5.26.1 in ./venv/lib/python3.13/site-packages (from streamlit->-r requirements.txt (line 1)) (7.36.1)
+Requirement already satisfied: pyarrow!=25.0.0,<26,>=7.0 in ./venv/lib/python3.13/site-packages (from streamlit->-r requirements.txt (line 1)) (25.0.1)
+Requirement already satisfied: requests<3,>=2.27 in ./venv/lib/python3.13/site-packages (from streamlit->-r requirements.txt (line 1)) (2.34.2)
+Requirement already satisfied: toml<2,>=0.10.1 in ./venv/lib/python3.13/site-packages (from streamlit->-r requirements.txt (line 1)) (0.10.2)
+Requirement already satisfied: typing-extensions<5,>=4.10.0 in ./venv/lib/python3.13/site-packages (from streamlit->-r requirements.txt (line 1)) (4.16.0)
+Requirement already satisfied: starlette<2,>=0.46.0 in ./venv/lib/python3.13/site-packages (from streamlit->-r requirements.txt (line 1)) (1.6.0)
+Requirement already satisfied: uvicorn<1,>=0.30.0 in ./venv/lib/python3.13/site-packages (from streamlit->-r requirements.txt (line 1)) (0.52.4)
+Requirement already satisfied: httptools<1,>=0.6.3 in ./venv/lib/python3.13/site-packages (from streamlit->-r requirements.txt (line 1)) (0.8.0)
+Requirement already satisfied: anyio<5,>=4.0.0 in ./venv/lib/python3.13/site-packages (from streamlit->-r requirements.txt (line 1)) (4.15.1)
+Requirement already satisfied: python-multipart<1,>=0.0.10 in ./venv/lib/python3.13/site-packages (from streamlit->-r requirements.txt (line 1)) (0.0.32)
+Requirement already satisfied: websockets<17,>=12.0.0 in ./venv/lib/python3.13/site-packages (from streamlit->-r requirements.txt (line 1)) (16.1.1)
+Requirement already satisfied: itsdangerous<3,>=2.1.2 in ./venv/lib/python3.13/site-packages (from streamlit->-r requirements.txt (line 1)) (2.2.0)
+Requirement already satisfied: jinja2 in ./venv/lib/python3.13/site-packages (from altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit->-r requirements.txt (line 1)) (3.1.6)
+Requirement already satisfied: jsonschema>=3.0 in ./venv/lib/python3.13/site-packages (from altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit->-r requirements.txt (line 1)) (4.26.0)
+Requirement already satisfied: narwhals>=2.4.0 in ./venv/lib/python3.13/site-packages (from altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit->-r requirements.txt (line 1)) (2.26.0)
+Requirement already satisfied: idna>=2.8 in ./venv/lib/python3.13/site-packages (from anyio<5,>=4.0.0->streamlit->-r requirements.txt (line 1)) (3.19)
+Requirement already satisfied: python-dateutil>=2.8.2 in ./venv/lib/python3.13/site-packages (from pandas<4,>=1.4.0->streamlit->-r requirements.txt (line 1)) (2.9.0.post0)
+Requirement already satisfied: charset_normalizer<4,>=2 in ./venv/lib/python3.13/site-packages (from requests<3,>=2.27->streamlit->-r requirements.txt (line 1)) (3.5.1)
+Requirement already satisfied: urllib3<3,>=1.26 in ./venv/lib/python3.13/site-packages (from requests<3,>=2.27->streamlit->-r requirements.txt (line 1)) (2.7.0)
+Requirement already satisfied: certifi>=2023.5.7 in ./venv/lib/python3.13/site-packages (from requests<3,>=2.27->streamlit->-r requirements.txt (line 1)) (2026.7.22)
+Requirement already satisfied: h11>=0.8 in ./venv/lib/python3.13/site-packages (from uvicorn<1,>=0.30.0->streamlit->-r requirements.txt (line 1)) (0.16.0)
+Requirement already satisfied: MarkupSafe>=2.0 in ./venv/lib/python3.13/site-packages (from jinja2->altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit->-r requirements.txt (line 1)) (3.0.3)
+Requirement already satisfied: attrs>=22.2.0 in ./venv/lib/python3.13/site-packages (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit->-r requirements.txt (line 1)) (26.1.0)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in ./venv/lib/python3.13/site-packages (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit->-r requirements.txt (line 1)) (2025.9.1)
+Requirement already satisfied: referencing>=0.28.4 in ./venv/lib/python3.13/site-packages (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit->-r requirements.txt (line 1)) (0.37.0)
+Requirement already satisfied: rpds-py>=0.25.0 in ./venv/lib/python3.13/site-packages (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit->-r requirements.txt (line 1)) (2026.6.3)
+Requirement already satisfied: six>=1.5 in ./venv/lib/python3.13/site-packages (from python-dateutil>=2.8.2->pandas<4,>=1.4.0->streamlit->-r requirements.txt (line 1)) (1.17.0)
+(venv) harshitasingh@Harshitas-MacBook-Air smart-waste-ai % streamlit --version
+Streamlit, version 1.63.0
+(venv) harshitasingh@Harshitas-MacBook-Air smart-waste-ai % touch waste_rules.json
+(venv) harshitasingh@Harshitas-MacBook-Air smart-waste-ai % open -e waste_rules.json
+(venv) harshitasingh@Harshitas-MacBook-Air smart-waste-ai % ls -la
+total 40
+drwxr-xr-x@  9 harshitasingh  staff   288 Sep  8 20:31 .
+drwx------@ 17 harshitasingh  staff   544 Sep  8 20:31 ..
+-rw-r--r--@  1 harshitasingh  staff  6148 Sep  8 20:21 .DS_Store
+drwxr-xr-x@  9 harshitasingh  staff   288 Sep  8 21:11 .venv
+-rw-r--r--@  1 harshitasingh  staff  1982 Sep  8 21:06 app.py
+drwxr-xr-x@  3 harshitasingh  staff    96 Sep  8 20:31 data
+-rw-r--r--@  1 harshitasingh  staff    16 Sep  8 21:03 requirements.txt
+drwxr-xr-x@  9 harshitasingh  staff   288 Sep  8 20:31 venv
+-rw-r--r--@  1 harshitasingh  staff  1499 Sep  8 21:13 waste_rules.json
+(venv) harshitasingh@Harshitas-MacBook-Air smart-waste-ai % streamlit run app.py 
+2026-09-08 21:14:10.386 Uvicorn server started on :::8502
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8502
+  Network URL: http://192.168.1.13:8502
+
+  Help agents write better Streamlit apps?
+  Install the official Streamlit skills by running streamlit skills in your terminal.
+
+  For better performance, install the Watchdog module:
+
+  $ xcode-select --install
+  $ pip install watchdog
+            
+                
