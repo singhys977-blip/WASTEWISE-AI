@@ -1,0 +1,37 @@
+{
+    "biodegradable": {
+        "handling": "Segregate biodegradable waste separately.",
+        "recommended_action": "Send for appropriate organic waste processing.",
+        "source": "Solid Waste Management Rules, 2026"
+    },
+
+    "recyclable": {
+        "handling": "Keep recyclable material separated.",
+        "recommended_action": "Send to an appropriate recycling or processing channel.",
+        "source": "Solid Waste Management Rules, 2026"
+    },
+
+    "non_recyclable": {
+        "handling": "Keep non-recyclable waste separate from recyclable material.",
+        "recommended_action": "Send through the appropriate municipal waste-management channel.",
+        "source": "Solid Waste Management Rules, 2026"
+    },
+
+    "hazardous": {
+        "handling": "Do not mix hazardous waste with ordinary household waste.",
+        "recommended_action": "Use an appropriate hazardous-waste handling channel.",
+        "source": "Applicable waste-management regulations"
+    },
+
+    "electronic": {
+        "handling": "Do not mix electronic waste with ordinary solid waste.",
+        "recommended_action": "Use an appropriate e-waste collection and management channel.",
+        "source": "Applicable e-waste regulations"
+    },
+
+    "other": {
+        "handling": "Identify the material before deciding the disposal method.",
+        "recommended_action": "Use the appropriate waste-management channel based on the material.",
+        "source": "Solid Waste Management Rules, 2026"
+    }
+}
